@@ -77,7 +77,7 @@ function Chart({
         <XAxis {...attributes} />
         {Object.entries(chartConfig).map(([index, item]) => (
           // console.log(item.attributes);
-          <Area {...(item as any).attributes} />
+          <Area key={index} {...(item as any).attributes} />
         ))}
       </AreaChart>
     </ChartContainer>
