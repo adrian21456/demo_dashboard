@@ -65,10 +65,10 @@ function StatsCard({
         <div className="col-span-1 flex items-center justify-center">
           {icon}
         </div>
-      </div>
-      <div>
         {showChart && (
-          <Chart config={config} Data={Data} attributes={attributes} />
+          <div className="col-span-4">
+            <Chart config={config} Data={Data} attributes={attributes} />
+          </div>
         )}
       </div>
     </div>

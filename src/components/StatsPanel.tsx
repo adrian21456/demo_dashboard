@@ -83,8 +83,8 @@ const chartData = [
 
 function StatsPanel() {
   return (
-    <>
-      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 col-span-4">
+      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg col-span-1 h-full">
         <StatsCard
           config={chartConfig}
           Data={chartData}
@@ -95,7 +95,7 @@ function StatsPanel() {
           description="50 Readings"
         />
       </div>
-      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg">
+      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg col-span-1 h-full">
         <StatsCard
           config={chartConfig2}
           Data={chartData}
@@ -106,7 +106,7 @@ function StatsPanel() {
           description="50 Readings"
         />
       </div>
-      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg">
+      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg col-span-1 h-full">
         <StatsCard
           config={chartConfig3}
           Data={chartData}
@@ -117,7 +117,7 @@ function StatsPanel() {
           description="50 Readings"
         />
       </div>
-      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg">
+      <div className="bg-primary-foreground p-2 rounded-lg shadow-lg col-span-1 h-full">
         <StatsCard
           config={chartConfig4}
           Data={chartData}
@@ -128,7 +128,7 @@ function StatsPanel() {
           description="50 Readings"
         />
       </div>
-    </>
+    </div>
   );
 }
 
